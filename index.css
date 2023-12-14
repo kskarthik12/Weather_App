@@ -1,0 +1,138 @@
+/* CSS styling for the weather page */
+
+/* Main container styling */
+.container {
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 607px; /* Set a maximum width */
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+}
+
+/* Styling for the top bar */
+.top_bar {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 60px;
+}
+
+/* Styling for search input */
+.top_bar input {
+    display: flex;
+    justify-content: center;
+    width: 362px;
+    height: 78px;
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 40px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styling for search icon */
+.search_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background: #ebfffc;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Styling for weather image, temperature, location, and data container */
+.weather_image {
+    margin-top: 60px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather_temp {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.weather_location {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.data_container {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for individual data elements */
+.element {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.data {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+
+    .top_bar {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+    }
+
+    .top_bar input {
+        width: 100%;
+    }
+
+    .search_icon {
+        width: 100%;
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .weather_temp {
+        font-size: 80px; /* Adjust font size for smaller screens */
+    }
+
+    .weather_location {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .data_container {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+
+    .element {
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+}

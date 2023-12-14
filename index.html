@@ -1,0 +1,58 @@
+<!-- HTML structure for the weather page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Weather Page</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Main container for the weather page -->
+    <div class='container'>
+        <!-- Top bar containing search input and search icon -->
+        <div class='top_bar'>
+            <input type='text' class='cityInput' placeholder='Search' />
+            <div class='search_icon' onclick="search()">
+                <img src="Assets/search.png" alt="Search Icon" />
+            </div>
+        </div>
+
+        <!-- Weather information section -->
+        <div> 
+            <!-- Weather image -->
+            <div class='weather_image'>
+                <img src="Assets/cloud.png" alt="Weather Image" />
+            </div>
+
+            <!-- Temperature, location, and data container -->
+            <div class='weather_temp'>24°C</div>
+            <div class='weather_location'>London</div>
+            <div class='data_container'>
+                <!-- Elements for displaying humidity and wind speed -->
+                <div class='element'>
+                    <img src="Assets/humidity.png" class='icon' alt="Humidity Icon" />
+                    <div class='data'>
+                        <div class='humidity_percent'>64%</div>
+                        <div class="text">Humidity</div>
+                    </div>
+                </div>
+                <div class='element'>
+                    <img src="Assets/wind.png" class='icon' alt="Wind Icon" />
+                    <div class='data'>
+                        <div class='wind_rate'>18 km/h</div>
+                        <div class="text">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
